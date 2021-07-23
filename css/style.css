@@ -1,0 +1,134 @@
+@charset 'utf-8';
+
+* {
+  background-color: #111;
+  color: white;
+  margin: 0 auto;
+}
+
+.clearfix::before,
+.clearfix::after {
+  margin: 0;
+  clear: both;
+  content: "";
+}
+
+title {
+  font-family: "Lobster", cursive;
+}
+li {
+  text-decoration: none;
+  list-style: none;
+}
+ul {
+  text-decoration: none;
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: aliceblue;
+}
+
+hr {
+  width: 1800px;
+  position: absolute;
+  top: 680px;
+  left: 55px;
+}
+
+/* header */
+#header {
+  height: 70px;
+  border-bottom: 1px solid gray;
+}
+.logo a {
+  display: block;
+  margin-top: 10px;
+  margin-left: 40px;
+  font-size: 35px;
+  font-family: "Lobster", cursive;
+  float: left;
+}
+header > ul {
+  float: right;
+  width: 500px;
+  height: 70px;
+}
+header > ul > li {
+  float: left;
+  width: 15%;
+  text-align: center;
+  display: block;
+  margin-top: 24px;
+}
+header > ul > li a {
+  font-size: 17px;
+  font-family: "Gothic A1", sans-serif;
+}
+header > ul > li a i {
+  font-size: 25px;
+}
+header > ul > li:nth-child(5) {
+  width: 7%;
+}
+header > ul > li:nth-child(6) {
+  width: 7%;
+}
+header > ul > li > a:hover {
+  color: gray;
+}
+/*
+.per {
+  font-size: 20px;
+  display: block;
+  margin-left: 42%;
+}
+*/
+
+/* content */
+#content {
+  width: 1800px;
+  height: 800px;
+}
+.laychoice {
+  margin-top: 5%;
+  text-align: center;
+  font-size: 50px;
+  font-family: "Nanum Myeongjo", serif;
+}
+#n1 > ul {
+  width: 270px;
+  height: 310px;
+  float: left;
+  display: block;
+  margin-left: 2%;
+  margin-top: 5%;
+  border-radius: 15%;
+}
+#n1 > ul:first-child {
+  margin-left: 12%;
+}
+#n1 > ul > a {
+  font-size: 30px;
+  display: block;
+  margin-left: 23%;
+  display: none;
+  font-family: "Nanum Myeongjo", serif;
+}
+#n1 > ul > img {
+  width: 310px;
+  height: 310px;
+  margin-left: -40px;
+  border-radius: 5%;
+}
+/*
+.nextbox {
+  width: 100px;
+  height: 66px;
+  border: 1px solid #999;
+  font-size: 50px;
+  margin-top: -150px;
+  background-color: slategrey;
+  color: white;
+  border-radius: 10px;
+}*/

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- file_hyperlink -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Do+Hyeon&family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@200;300;400&display=swap" rel="stylesheet">
+
+    <!-- icon -->
+    <script src="https://kit.fontawesome.com/e8f93cd6ba.js" crossorigin="anonymous"></script>
+
+    <title>Planning...</title>
+</head>
+<body>
+    <header id="header" class=".clearfix">
+        <div class="logo"><a href="#">Planning</a></div>
+        <ul class="clearfix">
+            <li class="header_menu1"><a href="#">기획</a></li>
+            <li class="header_menu1"><a href="#">디자인</a></li>
+            <li class="header_menu1"><a href="#">웹 제작</a></li>
+            <li class="header_menu1"><a href="#">계획</a></li>
+            <li class="header_menu1"><a href="#"><i class="fab fa-github"></i></a></li>
+            <li class="header_menu1"><a href="#"><i class="fab fa-instagram"></i></a></li>
+        </ul>
+        <!-- <div class="per">사이트 100% 활용법 보기</div> --> 
+    </header>
+    <section id="content">
+        <div class="laychoice">레이아웃 선택</div>
+        <li id="n1" class=".clearfix">
+            <ul class="lay1"><a href="#" class="miri1">미리보기</a><img src="img/plan_design1.jpg" alt="design1"></ul>
+            <ul class="lay2"><a href="#" class="miri2">미리보기</a><img src="img/plan_design2_녀.jpg" alt="design2"></ul>
+            <ul class="lay3"><a href="#" class="miri3">미리보기</a><img src="img/plan_design3.jpg" alt="design3"></ul>
+            <ul class="lay4"><a href="#" class="miri4">미리보기</a><img src="img/plan_design2.jpg" alt="design2"></ul>
+        </li>
+    </section>
+    <button class="downscoll">더보기</button>
+    <hr>
+    <!--<div class="nextbox">다음</div>-->
+
+    <!-- script -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+        $("#n1 > .lay1 > img").mouseover(function(){
+            $(".miri1").css("display","block");
+        })
+        $("#n1 > .lay1 > img").mouseout(function(){
+            $(".miri1").css("display","none");
+        })
+        $("#n1 > .lay2 > img").mouseover(function(){
+            $(".miri2").css("display","block");
+        })
+        $("#n1 > .lay2 > img").mouseout(function(){
+            $(".miri2").css("display","none");
+        })
+        $("#n1 > .lay3 > img").mouseover(function(){
+            $(".miri3").css("display","block");
+        })
+        $("#n1 > .lay3 > img").mouseout(function(){
+            $(".miri3").css("display","none");
+        })
+        $("#n1 > .lay4 > img").mouseover(function(){
+            $(".miri4").css("display","block");
+        })
+        $("#n1 > .lay4 > img").mouseout(function(){
+            $(".miri4").css("display","none");
+        })
+    </script>
+</body>
+</html>
