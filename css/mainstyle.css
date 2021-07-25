@@ -1,0 +1,112 @@
+@charset 'utf-8';
+
+* {
+  background-color: #111;
+  color: white;
+  margin: 0 auto;
+}
+body {
+  height: 3000px;
+}
+.clearfix::before,
+.clearfix::after {
+  margin: 0;
+  clear: both;
+  content: "";
+}
+
+title {
+  font-family: "Lobster", cursive;
+}
+li {
+  text-decoration: none;
+  list-style: none;
+}
+ul {
+  text-decoration: none;
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: aliceblue;
+}
+
+hr {
+  width: 1800px;
+  position: absolute;
+  top: 680px;
+  left: 55px;
+}
+
+/* video */
+.vid {
+  width: 100%;
+  margin: 0px auto;
+  position: relative;
+}
+video {
+  width: 100%;
+}
+.vid_on_text {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+}
+.vid_on_text p {
+  margin-top: -24px;
+  text-align: center;
+  font-style: 48px;
+  color: #fff;
+}
+
+/* header */
+#header {
+  left: 0;
+  top: 0px;
+  width: 100%;
+  position: fixed;
+  height: 70px;
+  z-index: 1000;
+  border-bottom: 1px solid gray;
+  transition: all 0.3s ease;
+}
+#header.on {
+  position: fixed;
+  top: -61px;
+}
+.logo a {
+  display: block;
+  margin-top: 10px;
+  margin-left: 40px;
+  font-size: 35px;
+  font-family: "Lobster", cursive;
+  float: left;
+}
+header > ul {
+  float: right;
+  width: 500px;
+  height: 70px;
+}
+header > ul > li {
+  float: left;
+  width: 15%;
+  text-align: center;
+  display: block;
+  margin-top: 24px;
+}
+header > ul > li a {
+  font-size: 17px;
+  font-family: "Gothic A1", sans-serif;
+}
+header > ul > li a i {
+  font-size: 25px;
+}
+header > ul > li:nth-child(5) {
+  width: 7%;
+}
+header > ul > li:nth-child(6) {
+  width: 7%;
+}
+header > ul > li > a:hover {
+  color: gray;
+}
